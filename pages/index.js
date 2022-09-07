@@ -21,7 +21,7 @@ export default function Home() {
           <div className="text-center m-7 ">
             <h2 className="my-3 text-3xl text-[#212529]
             font-lora font-medium">Welcome back! 👋</h2>
-            <p className="text-gray-500 font-Inter">Let's build someting great</p>
+            <p className="text-gray-500 font-Inter">Let build someting great</p>
           </div>
           <div className='flex flex-col justify-center my-2'>
             <div className='flex flex-row mt-3 justify-center m-1 mx-6'>
