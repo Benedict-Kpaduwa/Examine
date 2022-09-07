@@ -6,7 +6,9 @@ import { ImFacebook } from "react-icons/im";
 
 export default function Home() {
 
-  const [showPassword, setShowPassword] = useState(false);
+const [showPassword, setShowPassword] = useState(false);
+const [password, setPassword] = useState("")
+
   return (
     <div className="flex flex-col items-center justify-center lg:min-h-screen md:min-h-screen py-2 pt-0
     bg-white">
@@ -20,8 +22,8 @@ export default function Home() {
         lg:rounded-xl md:rounded-xl lg:px-24 lg:py-4 lg:shadow-lg md:shadow-lg sm:shadow-none sm:px-1 sm:mt-7">
           <div className="text-center m-7 ">
             <h2 className="my-3 text-3xl text-[#212529]
-            font-lora font-medium">Welcome back! 👋</h2>
-            <p className="text-gray-500 font-Inter">Let's build someting great</p>
+            font-lora font-medium">Create your account</h2>
+            <p className="text-gray-500 font-Inter">It's includes a free 2 week trial!</p>
           </div>
           <div className='flex flex-col justify-center my-2'>
             <div className='flex flex-row mt-3 justify-center m-1 mx-6'>
@@ -41,26 +43,25 @@ export default function Home() {
               <hr className='border-gray-300'></hr>
             </div>
           </div>
+          <input type='text' placeholder="Full Name"
+            className="w-full mb-3 px-4 py-3 border rounded dark:placeholder-gray
+            focus:border-blue-500 dark:bg-transparent" />
           <input type='text' placeholder="Email"
             className="w-full mb-3 px-4 py-3 border rounded dark:placeholder-gray
             focus:border-blue-500 dark:bg-transparent" />
           <div className='relative'>
-            <input type={showPassword ? "text" : "password"} placeholder="Password"
+            <input type={showPassword ? "text" : "password"} placeholder="Password" onChange={(e)=>setPassword(e.target.value)} value={password}
             className="w-full mb-3 px-4 py-3 border rounded dark:placeholder-gray
             focus:border-blue-500 dark:bg-transparent" />
             <button onClick={()=>{setShowPassword(!showPassword)}} className='absolute top-1/2 right-3 -translate-y-1/2 text-xs text-purple-900 font-bold'>SHOW</button>
           </div>
+          
           <div className="flex justify-center my-4">
             <button type="submit" className="text-white text-center 
-            cursor-pointer w-full bg-purple-900 rounded p-4">Login</button>
-          </div>
-          <div className='border-2 border-dashed rounded-sm p-4 flex flex-col text-center bg-cyan-100 border-sky-400 text-cyan-600'>
-            <span className='text-base'>Click here</span>
-            <p className='text-xs'>to sign up for the complete Examine Membership. Includes a free 2 week trial!</p>
-          </div>
+            cursor-pointer w-full bg-purple-900 rounded p-4">Start your 2-week free trial</button>
+          </div>    
         </div>
       </main>
     </div>
   )
 }
-
