@@ -17,7 +17,7 @@ export default function Home() {
       <main className="flex flex-col items-center justify-center
       w-full flex-1 lg:px-20 md:px-20 sm:px-1 bg-white">
         <div className="bg-white w-full lg:w-3/5 md:2/5 lg:mx-auto md:mx-auto sm:h-screen
-        lg:rounded-xl md:rounded-xl lg:px-24 lg:py-4 lg:shadow-lg md:shadow-lg sm:shadow-none sm:px-1 sm:mt-7">
+        lg:rounded-xl md:rounded-xl lg:px-24 lg:py-4 lg:shadow-lg md:shadow-lg sm:shadow-none sm:mt-7 sm:px-12">
           <div className="text-center m-7 ">
             <h2 className="my-3 text-3xl text-[#212529]
             font-lora font-medium">Welcome back! 👋</h2>
