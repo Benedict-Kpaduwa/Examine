@@ -30,7 +30,7 @@ Go to the following address in your web browser:
 localhost:3000
 ```
 
-#### 3. Time Spent 
+#### 4. Time Spent 
 * I spent a total of 12 hours on the project
 
 ## Screenshots
