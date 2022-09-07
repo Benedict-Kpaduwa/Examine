@@ -9,7 +9,7 @@ const NavBar=()=>{
     return(
         <>
             <nav className="flex justify-between items-center py-4 shadow-3xl w-full h-20 bg-gray-100">
-                <div className="lg:flex lg:flex-row lg:items-center lg:relative md:flex md:flex-row md:items-center md:relative w-3/4 h-20 shadow-md rounded-none sm:hidden">
+                <div className="sm:hidden lg:flex lg:flex-row lg:items-center lg:relative md:flex md:flex-row md:items-center md:relative w-3/4 h-20 shadow-md rounded-none">
                     <svg aria-hidden="true" className="w-8 h-8 text-purple-900" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
                     <input type="text" placeholder="What do you want to learn about?" className="text-2xl w-1/2 border-b-2 border-gray-400 outline-none focus:border-gray-400 p-2 font-Inter text-purple-900 placeholder-purple-900 bg-gray-100"/>
                 </div>
@@ -42,10 +42,8 @@ const NavBar=()=>{
                             //     <Link href="/aboutus">
                             //         <a className="px-3 py-2 text-lg justify-between text-black font-Inter font-normal items-center inline-flex">About Us</a>
                             //     </Link> </div>  
-                            <AiOutlineClose className="w-8 h-8 mx-2"/>
-                            
-                            
-                         }
+                            <AiOutlineClose className="w-8 h-8 mx-2"/>      
+                        }
                     </div>
                 </div>
                 {/* for mobile screen */}
