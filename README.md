@@ -36,7 +36,8 @@ localhost:3000
 
 <p align="center">
 
-  <!-- <img src="https://github.com/Benedict-Kpaduwa/TB-Test/blob/master/public/images/Screenshots/Desktop%20View.png" /> -->
+  <img src="https://github.com/Benedict-Kpaduwa/Examine/blob/main/screenshots/LoginPage.png" />
+  <img src="https://github.com/Benedict-Kpaduwa/Examine/blob/main/screenshots/SignUpPage.png" />
     
 </p>
 
@@ -44,6 +45,7 @@ localhost:3000
 
 <p align="center">
   
-  <!-- <img src="https://github.com/Benedict-Kpaduwa/TB-Test/blob/master/public/images/Screenshots/Mobile%20View.png" /> -->
+  <img src="https://github.com/Benedict-Kpaduwa/Examine/blob/main/screenshots/LoginMobileView.png" />
+  <img src="https://github.com/Benedict-Kpaduwa/Examine/blob/main/screenshots/SignUpMobileView.png" />
   
 </p>
