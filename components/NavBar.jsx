@@ -13,7 +13,7 @@ const NavBar=()=>{
                     <svg aria-hidden="true" className="w-8 h-8 text-purple-900" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
                     <input type="text" placeholder="What do you want to learn about?" className="text-2xl w-1/2 border-b-2 border-gray-400 outline-none focus:border-gray-400 p-2 font-Inter text-purple-900 placeholder-purple-900 bg-gray-100"/>
                 </div>
-                <div className="lg:flex lg:space-x-4 w-1/4 lg:items-center md:flex md:space-x-4 md:items-center justify-end bg-white h-20 shadow-gray-500 sm:hidden">
+                <div className="lg:flex lg:space-x-4 w-1/4 lg:items-center md:flex md:space-x-4 md:items-center justify-end bg-white h-20 shadow-gray-500 sm:hidden border-solid border-2 border-gray-100">
                     <Link href="/">
                         <a className="px-3 py-2 text-xl text-black font-Inter font-normal items-center inline-flex">Login</a>
                     </Link>
