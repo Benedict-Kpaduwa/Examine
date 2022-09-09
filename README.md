@@ -48,7 +48,7 @@ localhost:3000
 
 <p align="center">
   
-  <img src="https://github.com/Benedict-Kpaduwa/Examine/blob/main/screenshots/LoginMobileView.png" />
-  <img src="https://github.com/Benedict-Kpaduwa/Examine/blob/main/screenshots/SignUpMobileView.png" />
+  <!-- <img src="https://github.com/Benedict-Kpaduwa/Examine/blob/main/screenshots/LoginMobileView.png" />
+  <img src="https://github.com/Benedict-Kpaduwa/Examine/blob/main/screenshots/SignUpMobileView.png" /> -->
   
 </p>
