@@ -7,7 +7,6 @@ import { ImFacebook } from "react-icons/im";
 export default function Home() {
 
 const [showPassword, setShowPassword] = useState(false);
-const [password, setPassword] = useState("")
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen md:min-h-screen py-2 pt-0
@@ -29,37 +28,37 @@ const [password, setPassword] = useState("")
               </div>
               
               <div className='flex flex-col justify-center my-2'>
-                <div className='flex flex-row mt-3 justify-center m-1 mx-6'>
+                <div className='flex flex-row mt-3 justify-center m-1 mx-6 space-x-6'>
                   <a href="#" className='border-2 border-gray-100 rounded-lg p-2.5 mx-2'>
-                    <FcGoogle className='text-xl'/>
+                    <FcGoogle className='text-2xl w-11 h-8'/>
                   </a>
                   <a href="#" className='border-2 border-gray-100 rounded-lg p-2 mx-2'>
-                    <BsApple className='text-xl'/>
+                    <BsApple className='text-2xl w-11 h-8'/>
                   </a>
                   <a href='#' className='border-2 border-gray-100 rounded-lg p-2 mx-2'>
-                    <ImFacebook className='text-xl text-[#3B5999]'/>
+                    <ImFacebook className='text-2xl text-[#3B5999] w-11 h-8'/>
                   </a>
                 </div>
                 <div className='mt-10 grid grid-cols-3 items-center text-gray-400'>
                   <hr className='border-gray-300'></hr>
-                  <p className='text-center text-xs'>OR</p>
+                  <p className='text-center text-[14px]'>OR</p>
                   <hr className='border-gray-300'></hr>
                 </div>
               </div>
               <form className="space-y-4 md:space-y-6" action="#">
                 <input type='text' placeholder="Full Name"
-                className="w-full mb-3 px-4 py-3 border rounded-xl dark:placeholder-gray" />
+                className="w-full mb-3 px-4 py-3 border rounded-[4.8px] dark:placeholder-gray" />
                 <input type='text' placeholder="Email"
-                className="w-full mb-3 px-4 py-3 border rounded-xl dark:placeholder-gray" />
+                className="w-full mb-3 px-4 py-3 border rounded-[4.8px] dark:placeholder-gray" />
                 <div className='relative h-11 w-full'>
                   <input type={showPassword ? "text" : "password"} placeholder="Password"
-                  className="w-full mb-3 px-4 py-3 border rounded-xl dark:placeholder-gray
+                  className="w-full mb-3 px-4 py-3 border rounded-[4.8px] dark:placeholder-gray
                   focus:border-blue-500 dark:bg-transparent" />
                   <button onClick={()=>{setShowPassword(!showPassword)}} className='absolute top-1/2 right-4 -translate-y-1/2 cursor-pointer text-xs text-[#5E3B76] font-bold uppercase tracking-wide'>show</button>
                 </div>
                 <div className="flex justify-center my-4">
                   <button type="submit" className="text-white text-center 
-                  cursor-pointer w-full bg-[#5E3B76] rounded p-4">Start your 2-week free trial</button>
+                  cursor-pointer w-full bg-[#5E3B76] rounded-[4.8px] p-4">Start your 2-week free trial</button>
                 </div>
               </form>
             </div>
@@ -67,6 +66,5 @@ const [password, setPassword] = useState("")
         </div>
       </main>
     </div>
-
   )
 }
