@@ -8,7 +8,7 @@ const NavBar=()=>{
     const[menu, setMenu] = useState(true);
     return(
         <div className="fixed top-0 left-0 z-1000 block w-full bg-white transition-colors duration-300 shadow-4xl">
-            <nav className="mx-auto flex h-16 w-full items-center py-3 md:justify-between lg:h-19 lg:bg-white lg:py-0 wide:max-w-fixed bg-examine-purple-600">
+            <nav className="mx-auto flex h-16 w-full items-center py-3 md:justify-between lg:h-19 lg:bg-white lg:py-0 wide:max-w-fixed bg-[#5E3B76]">
                 <button type="button" aria-expanded="false" className="mx-2.5 h-[30pxx] w-8 rounded p-1.5 md:mx-4 lg:hidden bg-examine-purple-medium">
                 <svg className="w-full text-white" viewBox="0 0 21 15" fill="none"><path d="M1.06201 1.31836H19.062" stroke="currentColor"></path><path d="M1.06201 7.31836H19.062" stroke="currentColor"></path><path d="M1.06201 13.3184H19.062" stroke="currentColor"></path></svg>
                 </button>
