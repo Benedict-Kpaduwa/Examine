@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Link from 'next/link';
 import { useState } from 'react';
 import { FcGoogle } from "react-icons/fc";
 import { BsApple} from "react-icons/bs";
@@ -27,15 +28,21 @@ export default function Home() {
               </div>
               <div className='flex flex-col justify-center my-2'>
                 <div className='flex flex-row mt-3 justify-center m-1 mx-6 space-x-6'>
-                  <a href="#" className='border-2 border-gray-100 rounded-lg p-2.5 mx-2'>
-                    <FcGoogle className='text-2xl w-11 h-8'/>
-                  </a>
-                  <a href="#" className='border-2 border-gray-100 rounded-lg p-2 mx-2'>
-                    <BsApple className='text-2xl w-11 h-8'/>
-                  </a>
-                  <a href='#' className='border-2 border-gray-100 rounded-lg p-2 mx-2'>
-                    <ImFacebook className='text-2xl text-[#3B5999] w-11 h-8'/>
-                  </a>
+                  <Link href="#">
+                    <a className='border-2 border-gray-100 rounded-lg p-2.5 mx-2'>
+                      <FcGoogle className='text-2xl w-11 h-8'/>
+                    </a>
+                  </Link>
+                  <Link href="#">
+                    <a className='border-2 border-gray-100 rounded-lg p-2 mx-2'>
+                      <BsApple className='text-2xl w-11 h-8'/>
+                    </a>
+                  </Link>
+                  <Link href='#'>
+                    <a className='border-2 border-gray-100 rounded-lg p-2 mx-2'>
+                      <ImFacebook className='text-2xl text-[#3B5999] w-11 h-8'/>
+                    </a>
+                  </Link> 
                 </div>
                 <div className='mt-10 grid grid-cols-3 items-center text-gray-400'>
                   <hr className='border-[#EDF2F7]'></hr>
