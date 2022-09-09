@@ -7,7 +7,7 @@ import Logo from "./Logo";
 const NavBar=()=>{
     const[menu, setMenu] = useState(true);
     return(
-        <div className="fixed top-0 left-0 z-1000 block w-full bg-white transition-colors duration-300 shadow-lg">
+        <div className="fixed top-0 left-0 z-1000 block w-full bg-white transition-colors duration-300 shadow-4xl">
             <nav className="mx-auto flex h-16 w-full items-center py-3 md:justify-between lg:h-19 lg:bg-white lg:py-0 wide:max-w-fixed bg-examine-purple-600">
                 <button type="button" aria-expanded="false" className="mx-2.5 h-[30pxx] w-8 rounded p-1.5 md:mx-4 lg:hidden bg-examine-purple-medium">
                 <svg className="w-full text-white" viewBox="0 0 21 15" fill="none"><path d="M1.06201 1.31836H19.062" stroke="currentColor"></path><path d="M1.06201 7.31836H19.062" stroke="currentColor"></path><path d="M1.06201 13.3184H19.062" stroke="currentColor"></path></svg>
@@ -19,7 +19,7 @@ const NavBar=()=>{
                         </a>
                     </Link>
                 </div>
-                <div className="sm:hidden space-x-1 lg:flex bg-[#F6F6F6] lg:flex-row lg:items-center lg:relative md:flex md:flex-row md:items-center md:relative w-3/5 h-full shadow-md px-5 rounded-none">
+                <div className="sm:hidden space-x-1 lg:flex bg-[#F6F6F6] lg:flex-row lg:items-center lg:relative md:flex md:flex-row md:items-center md:relative w-3/5 h-full shadow-5xl px-5 rounded-none">
                     <svg aria-hidden="true" className="w-6 h-6 text-[#5E3B76] bg-inherit" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
                     <input type="text" placeholder="What do you want to learn about?" className="text-sm w-1/2 border-b-2 border-[#C9BDD2] bg-inherit outline-none p-2 font-Inter text-[#5E3B76] placeholder-[#5E3B76] top-[31px] text-[18px] font-normal"/>
                 </div>

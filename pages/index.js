@@ -17,7 +17,7 @@ export default function Home() {
 
       <main className="flex">
         <div className="mx-auto w-full max-w-lg md:pb-60 md:pt-28 lg:max-w-[600px]">
-          <div className='bg-white px-6 pt-0 pb-55 py-4 lg:rounded-xl lg:shadow-lg items-center'>
+          <div className='bg-white px-6 pt-0 pb-55 py-4 lg:rounded-[30px] lg:shadow-3xl items-center'>
             <div className="p-6 space-y-4 md:space-y-6 sm:p-8 text-center m-7">
               <div className='gap-[7px] flex flex-col -space-y-2'>
                 <h2 className="text-[40px] my-3 text-[#212529] font-lora font-medium">

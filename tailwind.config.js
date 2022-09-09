@@ -21,6 +21,11 @@ module.exports = {
       fontFamily:{
         sans:['Lora', 'serif'],
         sans:['Inter', 'sans-serif']
+      },
+      boxShadow:{
+        '3xl': '0px 2px 12px rgba(0, 0, 0, 0.08)',
+        '4xl': '0px 2px 6px rgba(0, 0, 0, 0.08)',
+        '5xl': 'inset 0px 0px 18px -4px rgba(0, 0, 0, 0.15)'
       }
     },
   },
