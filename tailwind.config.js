@@ -12,10 +12,15 @@ module.exports = {
       'xl': '1280px',
       '2xl': '1536px'
     },
+    // colors:{
+    //   transparent: 'transparent',
+    //   current: 'currentColor',
+    //   'purple': '#5E3B76',
+    // },
     extend: {
       fontFamily:{
-        lora: "Lora, modern cursive",
-        Inter: "Inter-Light,"
+        sans:['Lora', 'serif'],
+        sans:['Inter', 'sans-serif']
       }
     },
   },

@@ -1,63 +1,48 @@
 import Link from "next/link";
+import Image from "next/image";
 import { FiMenu } from "react-icons/fi";
 import { AiOutlineClose } from "react-icons/ai";
 import { useState } from "react";
+import Logo from "./Logo";
 
 const NavBar=()=>{
 
     const[menu, setMenu] = useState(true);
     return(
-        <>
-            <nav className="flex justify-between items-center py-4 shadow-3xl w-full h-20 bg-gray-100">
-                <div className="sm:hidden lg:flex lg:flex-row lg:items-center lg:relative md:flex md:flex-row md:items-center md:relative w-3/4 h-20 shadow-md rounded-none">
-                    <svg aria-hidden="true" className="w-8 h-8 text-purple-900" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
-                    <input type="text" placeholder="What do you want to learn about?" className="text-2xl w-1/2 border-b-2 border-gray-400 outline-none focus:border-gray-400 p-2 font-Inter text-purple-900 placeholder-purple-900 bg-gray-100"/>
+        <div className="fixed top-0 left-0 z-1000 block w-full bg-white transition-colors duration-300 shadow-lg">
+            <nav className="mx-auto flex h-16 w-full items-center py-3 md:justify-between lg:h-19 lg:bg-white lg:py-0 wide:max-w-fixed bg-examine-purple-600">
+                <button type="button" aria-expanded="false" className="mx-2.5 h-[30pxx] w-8 rounded p-1.5 md:mx-4 lg:hidden bg-examine-purple-medium">
+                <svg className="w-full text-white" viewBox="0 0 21 15" fill="none"><path d="M1.06201 1.31836H19.062" stroke="currentColor"></path><path d="M1.06201 7.31836H19.062" stroke="currentColor"></path><path d="M1.06201 13.3184H19.062" stroke="currentColor"></path></svg>
+                </button>
+                <div className="lg:px-6 2xl:!max-w-sm xxl:flex xxl:w-full xxl:max-w-[16rem]">
+                    <Link href="">
+                        <a className="block">
+                            <Logo />
+                        </a>
+                    </Link>
                 </div>
-                <div className="lg:flex lg:space-x-4 w-1/4 lg:items-center md:flex md:space-x-4 md:items-center justify-end bg-white h-20 shadow-md shadow-gray-500 sm:hidden border-solid border-2 border-gray-100">
+                <div className="sm:hidden lg:flex bg-gray-50 lg:flex-row lg:items-center lg:relative md:flex md:flex-row md:items-center md:relative w-3/5 h-full shadow-md px-5 rounded-none">
+                    <svg aria-hidden="true" className="w-5 h-5 text-purple-900 bg-inherit" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                    <input type="text" placeholder="What do you want to learn about?" className="text-sm w-1/2 border-b-2 border-gray-400 bg-inherit outline-none p-2 font-Inter text-purple-900 placeholder-purple-900"/>
+                </div>
+                <div className="hidden items-center pr-3 text-sm lg:flex xl:text-menu">
                     <Link href="/">
-                        <a className="px-3 py-2 text-xl text-black font-Inter font-normal items-center inline-flex">Login</a>
+                        <a className="hover:text-stroke flex items-center px-1.5 py-1 decoration-2 hover:text-primary xl:px-2">
+                            Login
+                        </a>
                     </Link>
                     <Link href="/Signup">
-                        <a className="rounded-xl bg-yellow-400 px-3 py-2 text-xl text-purple-900 font-Inter font-bold justify-between items-center "><span>Sign</span> <span>up</span></a>
+                        <a className="mx-2.5 flex bg-yellow-400 justify-between items-center gap-2 rounded-full bg-premuim px-3 py-1.5 font-bold text-[#5E3B76] transition-colors hover:text-[#5E3B76] xl:py-2 xl:px-5">
+                            <span>Sign</span><span>Up</span>
+                        </a>
                     </Link>
-                    <div onClick={()=>setMenu(!menu)} className="transition ease-in-out">
-                        {menu ? 
-                            <FiMenu className="w-8 h-8 mx-2"/> : 
-                            // <div className="flex items-center w-54 bg-white h-20">
-                            //     <Link href="/catergories">
-                            //         <a className="px-3 py-2 text-lg text-black font-Inter font-normal items-center inline-flex">Catergories</a>
-                            //     </Link>
-                            //     <Link href="/conditions">
-                            //         <a className="px-3 py-2 text-lg text-black font-Inter font-normal items-center inline-flex">Conditions</a>
-                            //     </Link>
-                            //     <Link href="/interventions">
-                            //         <a className="px-3 py-2 text-lg text-black font-Inter font-normal items-center inline-flex">Interventions</a>
-                            //     </Link>
-                            //     <Link href="/outcomes">
-                            //         <a className="px-3 py-2 text-lg text-black font-Inter font-normal items-center inline-flex">Outcomes</a>
-                            //     </Link>
-                            //     <Link href="/membership">
-                            //         <a className="px-3 py-2 text-lg text-black font-Inter font-normal items-center inline-flex">Membership</a>
-                            //     </Link>
-                            //     <Link href="/aboutus">
-                            //         <a className="px-3 py-2 text-lg justify-between text-black font-Inter font-normal items-center inline-flex">About Us</a>
-                            //     </Link> </div>  
-                            <AiOutlineClose className="w-8 h-8 mx-2"/>      
-                        }
+                    <div onClick={()=>setMenu(!menu)} className="transition-ease-in-out">
+                        {menu ? <FiMenu className="w-5 h-5 mx-2"/> : <AiOutlineClose className="w-5 h-5 mx-2"/> }
                     </div>
-                </div>
-                {/* for mobile screen */}
-                <div className="md:hidden lg:hidden justify-between flex items-center py-4 shadow-3xl w-full h-20 bg-purple-900">
-                    <div className="flex flex-row items-center relative h-20 space-x-2">
-                        <FiMenu className="w-8 h-8 text-white bg-purple-600 rounded ml-3"/>
-                        <h2 className="text-white text-3xl">Examine</h2>
-                    </div>
-                    <div>
-                        <svg aria-hidden="true" className="w-8 h-8 mr-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
-                    </div>
+                    
                 </div>
             </nav>
-        </>
+        </div>
     )
 }
 export default NavBar
