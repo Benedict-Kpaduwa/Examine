@@ -3,12 +3,10 @@ import { useState } from 'react';
 import { FcGoogle } from "react-icons/fc";
 import { BsApple} from "react-icons/bs";
 import { ImFacebook } from "react-icons/im";
-import Footer from '../components/Footer';
+
 
 export default function Home() {
-
 const [showPassword, setShowPassword] = useState(false);
-
   return (
     <div className="flex flex-col items-center justify-center min-h-screen md:min-h-screen py-2 pt-0
     bg-white">
@@ -26,8 +24,7 @@ const [showPassword, setShowPassword] = useState(false);
                   Create your account
                 </h2>
                 <p className="text-[#6C757D] font-Inter text-[18px] top-[62px] leading-[30px] h-[30px]">It includes a free 2 week trial!</p>
-              </div>
-              
+              </div>     
               <div className='flex flex-col justify-center my-2'>
                 <div className='flex flex-row mt-3 justify-center m-1 mx-6 space-x-6'>
                   <a href="#" className='border-2 border-gray-100 rounded-lg p-2.5 mx-2'>
