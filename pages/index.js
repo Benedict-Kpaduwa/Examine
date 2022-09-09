@@ -38,9 +38,9 @@ export default function Home() {
                   </a>
                 </div>
                 <div className='mt-10 grid grid-cols-3 items-center text-gray-400'>
-                  <hr className='border-gray-300'></hr>
+                  <hr className='border-[#EDF2F7]'></hr>
                   <p className='text-center text-[14px]'>OR</p>
-                  <hr className='border-gray-300'></hr>
+                  <hr className='border-[#EDF2F7]'></hr>
                 </div>
               </div>
               <form className="space-y-4 md:space-y-6" action="#">
@@ -54,12 +54,12 @@ export default function Home() {
                 </div>
                 <div className="flex justify-center my-4">
                   <button type="submit" className="text-white text-center 
-                  cursor-pointer w-full bg-[#5E3B76] rounded-[4.8px] p-4">Login</button>
+                  cursor-pointer w-full bg-[#5E3B76] rounded-[4.8px] p-4 font-Inter leading-[30px] items-center text-[20px] tracking-[0.01em]">Login</button>
                 </div>
               </form>
-              <div className='border-2 border-dashed rounded-[6px] cursor-pointer p-4 flex flex-col text-center bg-cyan-100 border-sky-400 text-cyan-600'>
-                <span className='text-base'>Click here</span>
-                <p className='text-xs'>to sign up for the complete Examine Membership. Includes a free 2 week trial!</p>
+              <div className='border-2 border-dashed rounded-[6px] cursor-pointer p-4 flex flex-col text-center bg-[#25A1AF]/[0.1] border-[#25A1AF]/[0.1] text-[#1B818C]'>
+                <span className='text-[18px] leading-[27px] items-center font-lora font-medium'>Click here</span>
+                <p className='text-[14px] leading-[22px] items-center font-Inter font-normal'>to sign up for the complete Examine Membership. Includes a free 2 week trial!</p>
               </div>
             </div>
           </div>

@@ -38,9 +38,9 @@ const [showPassword, setShowPassword] = useState(false);
                   </a>
                 </div>
                 <div className='mt-10 grid grid-cols-3 items-center text-gray-400'>
-                  <hr className='border-gray-300'></hr>
+                  <hr className='border-[#EDF2F7]'></hr>
                   <p className='text-center text-[14px]'>OR</p>
-                  <hr className='border-gray-300'></hr>
+                  <hr className='border-[#EDF2F7]'></hr>
                 </div>
               </div>
               <form className="space-y-4 md:space-y-6" action="#">
@@ -56,7 +56,7 @@ const [showPassword, setShowPassword] = useState(false);
                 </div>
                 <div className="flex justify-center my-4">
                   <button type="submit" className="text-white text-center 
-                  cursor-pointer w-full bg-[#5E3B76] rounded-[4.8px] p-4">Start your 2-week free trial</button>
+                  cursor-pointer w-full bg-[#5E3B76] rounded-[4.8px] p-4 font-Inter leading-[30px] items-center text-[20px] tracking-[0.01em]">Start your 2-week free trial</button>
                 </div>
               </form>
             </div>
