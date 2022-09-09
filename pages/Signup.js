@@ -23,7 +23,7 @@ const [showPassword, setShowPassword] = useState(false);
                 <h2 className="text-[40px] my-3 text-[#212529] font-lora font-medium">
                   Create your account
                 </h2>
-                <p className="text-[#6C757D] font-Inter text-[18px] top-[62px] leading-[30px] h-[30px]">It includes a free 2 week trial!</p>
+                <p className="text-[#6C757D] font-Inter font-normal text-[18px] top-[62px] leading-[30px] h-[30px]">It includes a free 2 week trial!</p>
               </div>     
               <div className='flex flex-col justify-center my-2'>
                 <div className='flex flex-row mt-3 justify-center m-1 mx-6 space-x-6'>
